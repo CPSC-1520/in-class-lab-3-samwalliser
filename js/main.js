@@ -14,13 +14,13 @@ showResourcesButton.addEventListener("click", (event) => {
 resourcesDiv.addEventListener("mouseover", (event) => {
     console.log(event.target);
     event.target.classList.add("fw-bold");
-   
 });
 
-
-
-// Exercise Step 3:
-
+// Exercise Step 3: Remove the font boldness on the links when you move your mouse away.
+resourcesDiv.addEventListener("mouseout", (event)=> {
+    console.log(event.target)
+    event.target.classList.remove("fw-bold");
+});
 
 
 
