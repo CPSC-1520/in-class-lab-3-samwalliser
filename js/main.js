@@ -22,6 +22,8 @@ resourcesDiv.addEventListener("mouseout", (event)=> {
     event.target.classList.remove("fw-bold");
 });
 
-
-
-// Exercise Step 4:
+// Exercise Step 4: Italicize a clicked item
+resourcesDiv.addEventListener("click", (event) => {
+    console.log(event.target);
+    event.target.classList.add("fst-italic");
+});
