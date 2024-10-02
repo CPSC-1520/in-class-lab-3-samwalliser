@@ -10,8 +10,12 @@ showResourcesButton.addEventListener("click", (event) => {
     resourcesDiv.classList.remove("d-none");
 });
 
-// Exercise Step 2:
-
+// Exercise Step 2: Add font boldness on the links when you hover over an item
+resourcesDiv.addEventListener("mouseover", (event) => {
+    console.log(event.target);
+    event.target.classList.add("fw-bold");
+   
+});
 
 
 
